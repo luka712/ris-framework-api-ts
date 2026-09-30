@@ -10,9 +10,9 @@ Do not create the `development` branch from a pull request workflow. Create it i
 
 ## Version
 
-`package.json` `version` is a release version, for example `1.0.0`. Do not put a prerelease suffix there. The publish workflow rejects versions that already contain `-`.
+`package.json` `version` is a release version, for example `0.1.0`. Do not put a prerelease suffix there. The publish workflow rejects versions that already contain `-`.
 
-When work toward the next release starts, change `version` on `development` in a normal commit (for example `1.0.0` to `1.0.1`) and note the change in `CHANGELOG.md`. Pushes then publish `1.0.1-dev.<run number>` with the npm dist-tag `next`. Merging that commit to `main` publishes `1.0.1` with dist-tag `latest`, tags `v1.0.1`, and opens a GitHub release.
+When work toward the next release starts, change `version` on `development` in a normal commit (for example `0.1.0` to `0.1.1`) and note the change in `CHANGELOG.md`. Pushes then publish `0.1.1-dev.<run number>` with the npm dist-tag `next`. Merging that commit to `main` publishes `0.1.1` with dist-tag `latest`, tags `v0.1.1`, and opens a GitHub release.
 
 The workflow edits `package.json` only on the runner for `development` prereleases (`npm version --no-git-tag-version`). That edit is not committed.
 

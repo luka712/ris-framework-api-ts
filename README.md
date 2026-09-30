@@ -1,6 +1,6 @@
 # ris-framework-api
 
-TypeScript interfaces for the ris framework, generated from `RisFramework.API.csproj`. Version 1.0.0.
+TypeScript interfaces for the ris framework, generated from `RisFramework.API.csproj`. Version 0.1.0.
 
 This package is the type surface. It does not ship a renderer. `IFramework` is the root: graphics device, renderer, pipelines, buffers, textures, cameras, meshes, materials, content, input, window, and time. `ktx2Factory` is present only when KTX2 is requested, and that type comes from `ris-ktx2-api`.
 

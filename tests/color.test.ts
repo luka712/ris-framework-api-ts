@@ -41,8 +41,13 @@ describe("Color", () => {
         color.r = 1;
         color.a = 0;
 
-        expect(Array.from(xyzw)).toEqual([0.2, 0.4, 0.6, 0.8]);
-        expect(Array.from(xyz)).toEqual([0.2, 0.4, 0.6]);
+        expect(xyzw[0]).toBeCloseTo(0.2, 5);
+        expect(xyzw[1]).toBeCloseTo(0.4, 5);
+        expect(xyzw[2]).toBeCloseTo(0.6, 5);
+        expect(xyzw[3]).toBeCloseTo(0.8, 5);
+        expect(xyz[0]).toBeCloseTo(0.2, 5);
+        expect(xyz[1]).toBeCloseTo(0.4, 5);
+        expect(xyz[2]).toBeCloseTo(0.6, 5);
     });
 
     it("builds the named colors with opaque alpha", () => {

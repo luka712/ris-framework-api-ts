@@ -1,0 +1,49 @@
+{
+  "name": "ris-framework-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build",
+    "test": "tsc --noEmit"
+  },
+  "description": "TypeScript interfaces for the ris framework, generated from RisFramework.API.csproj.",
+  "license": "MIT",
+  "keywords": [
+    "ris",
+    "framework",
+    "types",
+    "typescript",
+    "generated"
+  ],
+  "dependencies": {
+    "gl-matrix": "^3.4.2",
+    "ris-ktx2-api": "^0.1.0-dev.2.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luka712/ris-framework-api-ts.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

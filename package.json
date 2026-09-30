@@ -21,7 +21,7 @@
     "build": "tsc",
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run build",
-    "test": "tsc --noEmit"
+    "test": "tsc -p tsconfig.test.json --noEmit && vitest run"
   },
   "description": "TypeScript interfaces for the ris framework, generated from RisFramework.API.csproj.",
   "license": "MIT",
@@ -37,7 +37,8 @@
     "ris-ktx2-api": "^0.1.0-dev.2.4"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "vitest": "^1.6.1"
   },
   "repository": {
     "type": "git",
